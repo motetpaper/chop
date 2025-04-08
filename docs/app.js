@@ -58,7 +58,7 @@ function copythat() {
       ]).then(()=>{
         $( '#copybtn' ).text( 'Copied!' );
         setTimeout( () => {
-          $( '#copybtn' ).text( 'Copy URL to clipboard' );
+          $( '#copybtn' ).text( 'Copy Image to clipboard' );
         }, 1000);
         console.log( 'copied!' );
       });
