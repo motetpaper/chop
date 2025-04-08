@@ -1,0 +1,53 @@
+/*
+name  : style.css
+git 	: https://github.com/motetpaper/chop
+*/
+
+body {
+	background-color: white;
+	color: black;
+}
+
+div {
+	margin: 8px;
+}
+
+h1 {
+	font-size: 28pt;
+	font-family: arial;
+}
+
+#chop {
+	width: 200px;
+}
+
+#container {
+  /*
+   * Inline text with DIV solution found here:
+   * https://stackoverflow.com/a/4256301
+   */
+  display: inline-block;
+}
+
+#copybtn, #savebtn {
+	font-weight: bold;
+	width: 200px;
+	font-size: 12pt;
+	margin:0px;
+	margin-top: 10px;
+}
+
+#wrap {
+	text-align: left;
+	width: 220px;
+}
+
+#xm {
+	font-size: 35pt;
+	width: 200px;
+}
+
+.inline {
+  font-family: sans-serif;
+  font-size: 8pt;
+}

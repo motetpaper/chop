@@ -1,1 +1,99 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
+  {% include ga.html %}
 
+  <meta charset="utf-8">
+  <meta http-equiv="expires" content="Wed, 31 Dec 2025 23:59:59 GMT">
+  <meta name="keywords" content="chinese, korean, seal chop, web image api, stickers, family crest, stationery">
+  <meta name="description" content="Create colorful Chinese or Korean seal chops. Make stickers or custom stationery.">
+  <link rel="canonical" href="https://motetpaper.github.io/chop">
+  <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>Chinese Korean Seal Chop Generator</title>
+  </head>
+<body>
+
+<center>
+<div id="wrap">
+
+<h1>Chinese Korean Seal Chop <abbr title="An experimental service, not quite ready for prime time.">BETA</abbr></h1>
+<img id="chop"
+width="200" height="200"
+alt="Seal chop image - Chinese or Korean"
+title="Seal chop image - Chinese or Korean"
+src="./chop200.png"/>
+
+<br/>
+<br/>
+
+<button id="copybtn">Copy Image to clipboard</button>
+<br/><br/>
+<button id="savebtn">Save Image</button>
+
+<br/>
+<br/>
+
+
+<hr>
+<div>
+<input id="p" value="#FFFFFF" class="qq" type="color" name="p" />
+<label for="p">paper</label>
+</div>
+
+<div>
+<input id="b" value="#32A852" class="qq" type="color" name="b" />
+<label for="b">background</label>
+</div>
+
+<div>
+<input id="f" value="#FFFFFF" class="qq" type="color" name="f" />
+<label for="f">foreground</label>
+</div>
+
+<div>
+<input id="i" value="#003300" class="qq" type="color" name="i" />
+<label for="i">ink</label>
+</div>
+
+<br/>
+
+<label for="xm">xingming <abbr title="Personal name, but you can use other Chinese or Korean characters, too. ^^">[?]</abbr></label>
+<br/>
+<input id="xm" value="姓名字" type="text" name="x" />
+
+<br/>
+<br/>
+
+<hr>
+
+<br/>
+<br/>
+<br/>
+<b>Motet Chop Service</b><br/>
+Chinese and Korean Seal Chop Generator
+
+<br/>
+<br/><a href="https://motetpaper.github.io">MOTETPAPER</a> &copy; 2025
+<br/>
+<br/>sealchop generator v1.8.1
+<br/>under <a href="https://opensource.org/license/mit/">MIT License</a>
+<br/>
+<br/>
+Uses <a href="https://github.com/motetpaper/sealchop-js">sealchop-js</a> v8.2.
+
+</div>
+</center>
+
+<!-- modules area -->
+<script type="module" language="javascript" src="./jq/jquery-3.7.1.min.js"></script>
+<script type="module" language="javascript" src="./app.js"></script>
+
+</body>
+</html>
