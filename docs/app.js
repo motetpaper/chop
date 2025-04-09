@@ -75,7 +75,7 @@ function savethat() {
       const url = URL.createObjectURL(b);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `motet-chop-${xm}.png`;
+      a.download = `motetpaper-chop.png`;
       a.click();
       console.log( 'saved!' );
     });
