@@ -5,7 +5,7 @@
 //
 //
 
-import { SealChopObject } from './obj/SealChopObject.js'
+import { SealChopObject } from 'https://motetpaper.github.io/web/SealChopObject.js'
 
 let params = new URLSearchParams();
 
