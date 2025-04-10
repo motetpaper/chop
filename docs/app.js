@@ -41,6 +41,10 @@ $( document ).ready(function() {
     savethat();
   });
 
+  if(isAppleIphone()) {
+    $( '#copybtn' ).hide();
+  }
+
   upd();
 });
 
