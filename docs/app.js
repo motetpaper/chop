@@ -13,7 +13,7 @@ let params = new URLSearchParams();
 //
 //
 
-$( document ).ready( () => {
+$( document ).ready(function() {
   $( '#xm' ).on( 'change, keyup, input' , function() {
 
     // removes alphanum
@@ -29,15 +29,15 @@ $( document ).ready( () => {
     upd();
   });
 
-  $( '.qq' ).on( 'input' , () => {
+  $( '.qq' ).on( 'input' , function()  {
     upd();
   });
 
-  $( '#copybtn' ).click( () => {
+  $( '#copybtn' ).click( function()  {
     copythat();
   });
 
-  $( '#savebtn' ).click( () => {
+  $( '#savebtn' ).click( function()  {
     savethat();
   });
 
@@ -57,7 +57,7 @@ function copythat() {
         new ClipboardItem({ 'image/png' : b})
       ]).then(()=>{
         $( '#copybtn' ).text( 'Copied!' );
-        setTimeout( () => {
+        setTimeout( function()  {
           $( '#copybtn' ).text( 'Copy Image to clipboard' );
         }, 1000);
         console.log( 'copied!' );
