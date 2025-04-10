@@ -14,7 +14,7 @@ let params = new URLSearchParams();
 //
 
 $( document ).ready( () => {
-  $( '#xm' ).on( 'change, keyup, input' , () => {
+  $( '#xm' ).on( 'change, keyup, input' , function() {
 
     // removes alphanum
     if( $( this ).val().match( /\w/gui )) {
