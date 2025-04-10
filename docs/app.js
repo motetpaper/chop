@@ -14,6 +14,12 @@ let params = new URLSearchParams();
 //
 
 $( document ).ready(function() {
+
+  if(isAppleIphone()) {
+    $( '#copybtn' ).hide();
+  }
+
+  
   $( '#xm' ).on( 'change, keyup, input' , function() {
 
     // removes alphanum
@@ -40,10 +46,6 @@ $( document ).ready(function() {
   $( '#savebtn' ).click( function()  {
     savethat();
   });
-
-  if(isAppleIphone()) {
-    $( '#copybtn' ).hide();
-  }
 
   upd();
 });
