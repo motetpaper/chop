@@ -14,11 +14,6 @@ let params = new URLSearchParams();
 //
 
 $( document ).ready(function() {
-
-  if(isAppleIphone()) {
-    $( '#copybtn' ).hide();
-  }
-
   
   $( '#xm' ).on( 'change, keyup, input' , function() {
 
@@ -39,10 +34,6 @@ $( document ).ready(function() {
     upd();
   });
 
-  $( '#copybtn' ).click( function()  {
-    copythat();
-  });
-
   $( '#savebtn' ).click( function()  {
     savethat();
   });
@@ -52,7 +43,7 @@ $( document ).ready(function() {
 
 
 // functions
-
+/*
 function copythat() {
   // uses the Data URI to extract the blob
   fetch($( '#chop' ).attr( 'src' ))
@@ -70,7 +61,7 @@ function copythat() {
       });
     });
 }
-
+*/
 // saves a PNG to desktop or mobile device
 function savethat() {
   // uses the Data URI to extract the blob
