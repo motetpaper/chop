@@ -89,10 +89,10 @@ function upd() {
 
   // looks at each qq color option
   // sets each chop color parameter
-  $( '.qq' ).each( () => {
+  $( '.qq' ).each(function() {
     let key = $( this ).attr( 'name' );
     let value = $( this ).val().toUpperCase();
-    params.set(key, value)
+    params.set(key, value);
   });
 
   // sets the name parameter
