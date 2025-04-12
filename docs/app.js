@@ -5,6 +5,20 @@
 //
 //
 
+if ('serviceWorker' in navigator) {
+
+  navigator.serviceWorker.register('sw.js').then(
+    (registration) => {
+      console.log('[app.js] service worker reg OK.', registration);
+    },
+    (error) => {
+      console.error(`[app.js] service worker reg failed: ${error}`);
+    },
+  );
+} else {
+  console.error('[app.js] service worker unsupported.');
+}
+
 import { SealChopObject } from 'https://motetpaper.github.io/web/SealChopObject.js'
 
 let params = new URLSearchParams();
