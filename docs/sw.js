@@ -45,8 +45,8 @@ self.addEventListener('fetch', (evt) => {
 
   const nocacheurls = [ 
     'https://imgsct.cookiebot.com', 
-    'https://www.google-analytics.com' 
-    'https://www.googletagmanager.com'     
+    'https://www.google-analytics.com',
+    'https://www.googletagmanager.com',    
   ];
 
   if(nocacheurls.some((a) => evt.request.url.includes(a))) {
