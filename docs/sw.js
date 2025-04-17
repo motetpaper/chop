@@ -43,9 +43,14 @@ self.addEventListener('fetch', (evt) => {
   // Request method 'POST' is unsupported
   //
 
-  const ga = 'https://www.google-analytics.com';
+  const nocacheurls = [ 
+    'https://imgsct.cookiebot.com', 
+    'https://www.google-analytics.com' 
+    'https://www.googletagmanager.com'     
+  ];
 
-  if(evt.request.url.includes(ga)) {
+  if(nocacheurls.some((a) => evt.request.url.includes(a))) {
+    console.log(`not caching ${evt.request.url} ...`);
     evt.respondWith(fetch(evt.request));
   } else {
     evt.respondWith(
